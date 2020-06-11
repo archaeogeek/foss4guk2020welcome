@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>FOSS4GUK Online 2020 #FOSS4GUK2020</title>
+
+		<meta name="description" content="Implementing GEMINI 2.3 (ISO19115:2003) as a GeoNetwork metadata profile">
+		<meta name="author" content="Jo Cook, Astun Technology">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>FOSS4GUK Online 2020 #FOSS4GUK2020</h2>
+					<h3>Welcome from the OSGeo:UK Committee!</h3>
+				</section>
+
+				<section>
+					<h3>Hi! I'm Jo <span class="fragment">*waves*</span></h3>
+					<span class="fragment">
+					<p>I'm the chair of OSGeo:UK and it's my great pleasure to welcome you to this event.</p>
+					<p>We imagined this as a little FOSS4G fix in these strange times, but it's not so little now, with over 600 registered participants from XXX countries.</p>
+				</span>
+				</section>
+
+				<section data-background-image="./images/welcome.jpg" alt="welcome" class="full" data-background-size="cover" data-background-color="white">
+				<p class="attribution">Flickr: Bob Duran CC-BY-2.0</p>
+				</section>
+
+				<section>
+					<p>#FOSS4GUK2020 is an event run by the UK Chapter of the Open Source Geospatial Foundation, so it's my great pleasure to introduce the President of OSGeo to say a few words.</p>
+				</section>
+
+				<section>
+					<p>...</p>
+				</section>
+
+				<section>
+					<p>The UK Chapter of OSGeo was conceived as an idea back in 2006... Looking back at FOSS4G 2006, QGIS was at version 0.8, PostGIS was at version 1.2, and GRASS GIS was the most widely used desktop GIS, evidenced by the fact that it had several conference streams all to itself!</p>
+					<p>The aim of the UK chapter was to help find sources of open geospatial data for the UK as this was before the advent of OS Open Data and OpenStreetMap was pretty basic</p>
+					<p>How things have changed...</p>
+				</section>
+
+				<section>
+					<p>What we do now is facilitate and sometimes organise events, previously IRL but now online.</p>
+					<p>We use the funds we make from runnig these events to financially support open source geospatial development.</p>
+					<p>We also provide a community for UK-based users and developers.</p>
+					<p>Now you're all part of our community!</p>
+				</section>
+
+				<section>
+					<p>Before I hand you over to the people you're actually here to see, some thanks and some housekeeping</p>
+				</section>
+
+				<section>
+					<h3>Thanks</h3>
+					<p>To everyone for attending</p>
+					<p>To everyone who donated</p>
+					<p>To my lovely fairly committee members who've done much more than me</p>
+					<p>To our volunteer hosts and co-hosts</p>
+				</section>
+
+				<section>
+					<h3>Housekeeping</h3>
+					<p>We have a Code of Conduct, which now specifically covers online events. If you experience any issues or have any concerns throughout the day then the committee are here to help. Get in touch with us by XXX</p>
+					<p>We have two twitter hashtags for the event. Use #FOSS4GUKOnline for general comments (though remember there's a person at the end of every tweet or mention), and use #FOSS$GUKHelp for tech support. We'll do what we can to help.</p>
+					<p>and remember... this is the first time any of us have organised anything like this, so if and when something doesn't go according to plan, go with the flow and we'll do our best to sort it out</p>
+				</section>
+
+				<section>
+					<h3>Now on with the talks!</h3>
+				</section>
+
+
+
+
+				<section data-background-color="white">
+					<h3 style="color:black">Thank You!</h3>
+					<small style="color:black">Jo Cook, <a href="https://astuntechnology.com" target="_blank">Astun Technology</a>
+					<br />
+					technical enquiries: <a href="mailto:jocook@astuntechnology.com?subject=Gemini 2.3 technical enquiry">jocook@astuntechnology.com</a> 
+					<br />general enquiries: <a href="mailto:vickiewhite@astuntechnology.com?subject=Gemini 2.3 general enquiry">vickiewhite@astuntechnology.com</a></small>
+					<img class="center" src="./images/AstunSmallLogo.png" alt="logo">
+				</section>
+				
+			</div>
+
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+		<script src="js/jquery-3.4.1.slim.min.js"></script>
+		<script src="js/jquery-canvas-sparkles.js"></script>
+
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+				slideNumber: "c/t",
+				showNotes: false,
+				pdfSeparateFragments: false,
+				pdfMaxPagesPerSlide: 1,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+
+
+
+				]
+
+
+			});
+
+			
+
+		</script>
+
+	</body>
+</html>
